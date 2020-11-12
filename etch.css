@@ -1,0 +1,20 @@
+:root {
+    --grid-col: 1;
+    --grid-row: 1;
+  }
+  
+  #container {
+    display: grid;
+    min-height: 100px;
+    min-width: 100px;
+    grid-template-rows: repeat(var(--grid-row), 100%);
+    grid-template-columns: repeat(var(--grid-col), 100%);
+  }
+  
+  .grid-item {
+    display: grid;
+    border: 1px solid rgb(26, 2, 2);
+    text-align: center;
+    height: auto;
+    width: auto;
+  }
