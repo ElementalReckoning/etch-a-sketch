@@ -1,4 +1,6 @@
 let container = document.getElementById("container");
+let modal0 = document.getElementById("modal0");
+
 
 function createGrid(rows, cols) {
   container.style.setProperty("--grid-row", rows);
@@ -10,4 +12,8 @@ function createGrid(rows, cols) {
   };
 };
 
-createGrid(3, 3);
+modal.onClick = function gridSize () {
+  modal0.style.display = "block";
+}
+
+createGrid( 5, 5);
