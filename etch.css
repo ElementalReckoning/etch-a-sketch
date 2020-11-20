@@ -20,9 +20,8 @@
   }
 
   .modal0 {
-    display: grid; 
-    position: fixed; 
-    z-index: 1; 
+    display: none; 
+    position: fixed;  
     left: 0;
     top: 0;
     width: 100%; 
@@ -31,7 +30,6 @@
   }
 
   .modal-content {
-    display: none;
     background-color:#7e64ff;
     padding: 20px;
     border: 5px ridge #cb64ff;

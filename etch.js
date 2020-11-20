@@ -1,5 +1,6 @@
 let container = document.getElementById("container");
-let modal0 = document.getElementById("modal0");
+let modalBtn = document.getElementById("modalBtn");
+let modal0 = document.getElementById("myModal0");
 
 
 function createGrid(rows, cols) {
@@ -12,8 +13,15 @@ function createGrid(rows, cols) {
   };
 };
 
-modal.onClick = function gridSize () {
+modalBtn.onclick = function(e) {
   modal0.style.display = "block";
-}
+};
+
+window.onclick = function(e) {
+  if (e.target == modal0) {
+    modal0.style.display = "none";
+  }
+}; 
+
 
 createGrid( 5, 5);
