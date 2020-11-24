@@ -55,7 +55,10 @@ border-spacing: 0;
   }
   
   #container {
-  display: grid;
+    border: 5px solid seagreen;
+    margin-left: 25em;
+    margin-top: 5em;
+    display: grid;
     height: 500px;
     width: 500px;
     grid-template-rows: repeat(var(--grid-row), 1fr);
@@ -71,6 +74,8 @@ border-spacing: 0;
   }
 
   #btn {
+    margin-left: 50em;
+    margin-top: 3em;
     height: 25px;
     width: 100px;
     text-align: center; 

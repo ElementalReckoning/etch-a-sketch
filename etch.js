@@ -3,7 +3,7 @@ let modalBtn = document.getElementById("modalBtn");
 let modal0 = document.getElementById("myModal0");
 let div0 = document.querySelectorAll("div");
 let btn = document.getElementById("btn");
-let rows = 16;
+let rows = prompt("What is your grid size?");
 let cols = rows;
 
 
@@ -24,20 +24,8 @@ function createGrid(rows, cols) {
   };
 };
 
-btn.onclick = function(e) {
-  if (e.target == btn) {
-   reset();
-  };
-  createGrid();
-};
-
-function reset() {
-  rows = 0;
-  cols = 0;
-  rows = prompt("New grid size?");
-  cols = rows;
-  return rows;
-};
-
+btn.addEventListener("click", function() {
+  window.location.reload();
+});
 
 createGrid( rows, cols);
