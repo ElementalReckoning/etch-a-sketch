@@ -26,10 +26,18 @@ function createGrid(rows, cols) {
 
 btn.onclick = function(e) {
   if (e.target == btn) {
-    let newGrid = prompt("What is the size of your new grid?");
-    let cols = newGrid;
-  }
-}
+   reset();
+  };
+  createGrid();
+};
+
+function reset() {
+  rows = 0;
+  cols = 0;
+  rows = prompt("New grid size?");
+  cols = rows;
+  return rows;
+};
 
 
 createGrid( rows, cols);
